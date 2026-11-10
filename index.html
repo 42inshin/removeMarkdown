@@ -2,27 +2,28 @@
 <html lang="ko">
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MD to Text — Markdown을 평문으로</title>
-  <meta name="description" content="마크다운을 붙여넣으면 바로 일반 텍스트로 변환합니다. 목록, 체크박스, 링크와 코드는 유지하고 표는 테이블과 TSV로 복사하세요.">
+  <title>Remove Markdown — Markdown 서식 제거</title>
+  <meta name="description" content="Markdown을 붙여넣으면 서식을 제거한 평문으로 변환합니다. 무료, 가입 없음, 입력 내용 저장 없음. 목록, 링크와 표를 유지합니다.">
   <link rel="canonical" href="https://42inshin.github.io/removeMarkdown/">
   <meta name="robots" content="index,follow"><meta name="theme-color" content="#f7f7f4">
   <meta property="og:type" content="website"><meta property="og:locale" content="ko_KR">
-  <meta property="og:title" content="MD to Text — Markdown을 평문으로"><meta property="og:description" content="Markdown을 붙여넣으면 서식을 제거한 평문으로 바로 변환합니다.">
+  <meta property="og:title" content="Remove Markdown — Markdown 서식 제거"><meta property="og:description" content="Markdown을 붙여넣으면 서식을 제거한 평문으로 변환합니다.">
   <meta property="og:url" content="https://42inshin.github.io/removeMarkdown/">
   <meta name="twitter:card" content="summary"><link rel="stylesheet" href="./style.css">
   <script type="module" src="./app.js"></script>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5682766684917953" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header><a class="brand" href="./" lang="en">MD to Text</a><a href="https://github.com/42inshin/removeMarkdown">GitHub ↗</a></header>
-  <main>
-    <h1>Markdown을 평문으로</h1>
-    <p class="intro">Markdown을 붙여넣으면 서식을 제거한 평문으로 바로 변환합니다.</p>
+  <header><a class="brand" href="./" lang="en">Remove Markdown</a><a href="https://github.com/42inshin/removeMarkdown">GitHub ↗</a></header>
+  <main class="converter">
+    <h1>Markdown 서식 제거</h1>
+    <p class="intro">Markdown을 붙여넣으면 서식을 제거한 평문으로 변환합니다.</p>
+    <p class="service-info">무료 · 가입 없음 · 입력 내용 저장 없음</p>
     <div class="workspace">
       <section class="panel"><div class="bar"><label for="source" lang="en">Markdown</label><div><button id="example">예시</button><button id="clear">지우기</button></div></div><textarea id="source" placeholder="# 여기에 붙여넣기" spellcheck="false"></textarea></section>
       <section class="panel"><div class="bar"><h2>결과</h2><button id="copy" class="primary" disabled>복사</button></div><div id="result" class="result" role="region" aria-label="변환 결과" tabindex="0"><span class="placeholder">변환된 내용이 여기에 표시됩니다.</span></div></section>
     </div>
-    <div class="below"><span>입력한 내용은 브라우저 안에서만 처리됩니다.</span><span id="status" role="status" aria-live="polite"></span></div>
+    <div class="below" id="status" role="status" aria-live="polite"></div>
     <details>
       <summary>변환 방식</summary>
       <ul class="conversion-rules">
@@ -38,5 +39,5 @@
     <aside id="ad-slot" class="ad-slot" aria-label="광고 영역" hidden></aside>
     <noscript>변환 기능을 사용하려면 JavaScript를 켜주세요.</noscript>
   </main>
-  <footer><span lang="en">MD to Text</span><a href="./privacy.html">개인정보 처리 안내</a></footer>
+  <footer><span lang="en">Remove Markdown</span><a href="./privacy.html">개인정보 처리 안내</a></footer>
 </body></html>
