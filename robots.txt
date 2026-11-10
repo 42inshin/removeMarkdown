@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://42inshin.github.io/removeMarkdown/sitemap.xml
