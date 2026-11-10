@@ -2,30 +2,41 @@
 <html lang="ko">
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>마크다운 제거</title>
+  <title>MD to Text — Markdown을 평문으로</title>
   <meta name="description" content="마크다운을 붙여넣으면 바로 일반 텍스트로 변환합니다. 목록, 체크박스, 링크와 코드는 유지하고 표는 테이블과 TSV로 복사하세요.">
   <link rel="canonical" href="https://42inshin.github.io/removeMarkdown/">
   <meta name="robots" content="index,follow"><meta name="theme-color" content="#f7f7f4">
   <meta property="og:type" content="website"><meta property="og:locale" content="ko_KR">
-  <meta property="og:title" content="마크다운 제거"><meta property="og:description" content="붙여넣으면 바로 일반 텍스트로. 목록과 링크, 표는 그대로.">
+  <meta property="og:title" content="MD to Text — Markdown을 평문으로"><meta property="og:description" content="Markdown을 붙여넣으면 서식을 제거한 평문으로 바로 변환합니다.">
   <meta property="og:url" content="https://42inshin.github.io/removeMarkdown/">
   <meta name="twitter:card" content="summary"><link rel="stylesheet" href="./style.css">
   <script type="module" src="./app.js"></script>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5682766684917953" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header><a class="brand" href="./">마크다운 제거<span> / </span></a><a href="https://github.com/42inshin/removeMarkdown">GitHub ↗</a></header>
+  <header><a class="brand" href="./" lang="en">MD to Text</a><a href="https://github.com/42inshin/removeMarkdown">GitHub ↗</a></header>
   <main>
-    <h1>마크다운 제거</h1>
-    <p class="intro">마크다운을 붙여넣으면 바로 변환됩니다.</p>
+    <h1>Markdown을 평문으로</h1>
+    <p class="intro">Markdown을 붙여넣으면 서식을 제거한 평문으로 바로 변환합니다.</p>
     <div class="workspace">
-      <section class="panel"><div class="bar"><label for="source">마크다운</label><div><button id="example">예시</button><button id="clear">지우기</button></div></div><textarea id="source" placeholder="# 여기에 붙여넣기" spellcheck="false"></textarea></section>
+      <section class="panel"><div class="bar"><label for="source" lang="en">Markdown</label><div><button id="example">예시</button><button id="clear">지우기</button></div></div><textarea id="source" placeholder="# 여기에 붙여넣기" spellcheck="false"></textarea></section>
       <section class="panel"><div class="bar"><h2>결과</h2><button id="copy" class="primary" disabled>복사</button></div><div id="result" class="result" role="region" aria-label="변환 결과" tabindex="0"><span class="placeholder">변환된 내용이 여기에 표시됩니다.</span></div></section>
     </div>
     <div class="below"><span>입력한 내용은 브라우저 안에서만 처리됩니다.</span><span id="status" role="status" aria-live="polite"></span></div>
-    <details><summary>변환 방식</summary><p>제목과 강조 기호를 제거합니다. 목록의 -와 들여쓰기, 체크박스를 유지하고 *와 + 목록은 -로 바꿉니다. 링크와 이미지는 설명 (URL), 코드는 [언어]로 표시합니다. 표는 미리보기에서 테이블로, 일반 텍스트 복사에서는 탭으로 구분됩니다.</p></details>
+    <details>
+      <summary>변환 방식</summary>
+      <ul class="conversion-rules">
+        <li><strong>제목·강조:</strong> 제목, 굵게, 기울임, 취소선 기호를 제거합니다.</li>
+        <li><strong>목록:</strong> <code>-</code>와 중첩 들여쓰기를 유지하고, <code>*</code>와 <code>+</code> 목록은 <code>-</code>로 바꿉니다.</li>
+        <li><strong>체크박스:</strong> <code>[x]</code>와 <code>[ ]</code>를 그대로 유지합니다.</li>
+        <li><strong>링크·이미지:</strong> <code>설명 (URL)</code> 형식으로 표시합니다.</li>
+        <li><strong>코드:</strong> 코드 내용을 유지하고, 지정된 언어는 <code>[swift]</code>처럼 표시합니다.</li>
+        <li><strong>인용문:</strong> <code>&gt;</code> 기호를 제거하고 내용을 유지합니다.</li>
+        <li><strong>표:</strong> 미리보기에서는 테이블로 표시하고, 평문 복사에서는 탭으로 구분합니다.</li>
+      </ul>
+    </details>
     <aside id="ad-slot" class="ad-slot" aria-label="광고 영역" hidden></aside>
     <noscript>변환 기능을 사용하려면 JavaScript를 켜주세요.</noscript>
   </main>
-  <footer><span>마크다운 제거</span><a href="./privacy.html">개인정보 처리 안내</a></footer>
+  <footer><span lang="en">MD to Text</span><a href="./privacy.html">개인정보 처리 안내</a></footer>
 </body></html>
